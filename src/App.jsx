@@ -7,9 +7,11 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen text-slate-100 bg-transparent selection:bg-emerald-300 selection:text-slate-900">
+    <div className="min-h-screen bg-transparent text-slate-100 selection:bg-emerald-300 selection:text-slate-900">
+      {/* Dynamic background visuals with aurora, stars, and a soft grid */}
       <BackgroundVisual />
 
+      {/* Top navigation with subtle glass effect */}
       <header className="sticky top-0 z-10 backdrop-blur-md supports-[backdrop-filter]:bg-white/5">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
           <a href="#" className="font-semibold tracking-tight">Naman Sinha</a>
@@ -21,11 +23,19 @@ function App() {
         </div>
       </header>
 
-      <main>
-        <Profile />
-        <PortfolioProjects />
-        <Skills />
-        <Contact />
+      <main className="relative">
+        <section aria-label="Profile">
+          <Profile />
+        </section>
+        <section id="projects" aria-label="Projects">
+          <PortfolioProjects />
+        </section>
+        <section id="skills" aria-label="Skills">
+          <Skills />
+        </section>
+        <section id="contact" aria-label="Contact">
+          <Contact />
+        </section>
       </main>
 
       <footer className="py-8 text-center text-white/60 text-sm">
