@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="min-h-screen text-white bg-slate-950 selection:bg-emerald-300 selection:text-slate-900">
+      {/* Background with cursor-reactive gradient + stars */}
       <BackgroundVisual />
 
       <header className="sticky top-0 z-10 backdrop-blur supports-[backdrop-filter]:bg-slate-950/40">

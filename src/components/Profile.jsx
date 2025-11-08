@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, FileDown } from 'lucide-react';
-import Laptop3D from './Laptop3D';
+import SplineHero from './SplineHero';
 
 export default function Profile() {
   return (
@@ -16,21 +16,20 @@ export default function Profile() {
           </h1>
           <p className="mt-2 text-white/70">UI/UX Designer & Frontend Developer</p>
           <p className="mt-4 text-white/70">
-            I love turning ideas into intuitive, elegant interfaces and smooth interactions. Currently exploring
-            frontend and Android with a focus on performance and delightful details.
+            I’m an aspiring Frontend and Android App Developer passionate about turning creative ideas into sleek, interactive digital experiences. Curious by nature, I constantly explore new tools and technologies to push the boundaries of creativity and code. I enjoy designing intuitive interfaces and developing impactful products that solve real-world problems.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="#projects" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-slate-900 font-medium shadow hover:shadow-lg transition-shadow">See Projects</a>
-            <a href="mailto:get2naman@gmail.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 ring-1 ring-white/10 text-white">
+            <a href="#projects" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-slate-900 font-medium shadow hover:shadow-lg transition-all hover:scale-[1.02] active:scale-[.99]">See Projects</a>
+            <a href="mailto:get2naman@gmail.com" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 ring-1 ring-white/10 text-white hover:bg-white/10">
               <Mail className="w-4 h-4" /> Email
             </a>
-            <a href="https://github.com/get2naman-bit" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 ring-1 ring-white/10 text-white">
+            <a href="https://github.com/get2naman-bit" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 ring-1 ring-white/10 text-white hover:bg-white/10">
               <Github className="w-4 h-4" /> GitHub
             </a>
-            <a href="https://linkedin.com/in/naman-sinha-986511248" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 ring-1 ring-white/10 text-white">
+            <a href="https://linkedin.com/in/naman-sinha-986511248" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 ring-1 ring-white/10 text-white hover:bg-white/10">
               <Linkedin className="w-4 h-4" /> LinkedIn
             </a>
-            <a href="https://docs.google.com/document/d/1UWMmVFmXwFmiKYzFmX3KRYib5H7h4h2v/export?format=pdf" target="_blank" rel="noreferrer" download className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500 text-slate-900 font-medium">
+            <a href="https://docs.google.com/document/d/1UWMmVFmXwFmiKYzFmX3KRYib5H7h4h2v/export?format=pdf" target="_blank" rel="noreferrer" download className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-500 text-slate-900 font-medium hover:bg-emerald-400">
               <FileDown className="w-4 h-4" /> Download Resume
             </a>
           </div>
@@ -39,7 +38,7 @@ export default function Profile() {
           </div>
         </div>
         <div className="relative">
-          <Laptop3D />
+          <SplineHero />
         </div>
       </div>
     </section>

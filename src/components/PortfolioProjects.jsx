@@ -51,12 +51,13 @@ export default function PortfolioProjects() {
           {projects.map((p) => (
             <a key={p.title} href={p.link} target="_blank" rel="noreferrer" className="group relative rounded-2xl bg-white/5 ring-1 ring-white/10 p-5 hover:bg-white/10 transition-colors overflow-hidden">
               <div className="absolute inset-px rounded-[15px] pointer-events-none bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-              <div className="h-28 rounded-xl mb-4 bg-[radial-gradient(60%_60%_at_30%_30%,rgba(255,255,255,0.2),transparent_60%)]" />
+              {/* Sharper preview card without unwanted blur */}
+              <div className="h-32 rounded-xl mb-4 bg-gradient-to-br from-indigo-400/30 via-fuchsia-400/25 to-cyan-300/25 ring-1 ring-white/10" />
               <h3 className="text-lg font-medium text-white/90">{p.title}</h3>
               <p className="mt-1 text-sm text-white/60">{p.desc}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {p.stack.map((t) => (
-                  <span key={t} className="px-2 py-1 text-xs rounded-md bg-white/5 ring-1 ring-white/10 text-white/60">{t}</span>
+                  <span key={t} className="px-2 py-1 text-xs rounded-md bg-white/5 ring-1 ring-white/10 text-white/70">{t}</span>
                 ))}
               </div>
             </a>
